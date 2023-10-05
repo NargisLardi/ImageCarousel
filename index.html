@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link type='text/css' rel='stylesheet' href='style.css'>
+	<script type="text/javascript">
+		function disp(num){
+			var imgSrc='image'+num+'.jpeg';
+			document.getElementById('mainImg').src=imgSrc;
+		}
+	</script>
+
+</head>
+<body>
+	<ul class='thumb'>
+		<li onclick="disp(1)"><img src='image1.jpeg' alt='img1'></li>
+		<li onclick="disp(2)"><img src='image2.jpeg' alt='img2'></li>
+		<li onclick="disp(3)"><img src='image3.jpeg' alt='img3'></li>
+		<li onclick="disp(4)"><img src='image4.jpeg' alt='img4'></li>
+		<li onclick="disp(5)"><img src='image5.jpeg' alt='img5'></li>
+		<li onclick="disp(6)"><img src='image6.jpeg' alt='img6'></li>
+		<li onclick="disp(7)"><img src='image7.jpeg' alt='img7'></li>
+		<li onclick="disp(8)"><img src='image8.jpeg' alt='img8'></li>
+		<li onclick="disp(9)"><img src='image9.jpeg' alt='img9'></li>
+		<li onclick="disp(10)"><img src='image10.jpeg' alt='img10'></li>
+	</ul>
+	<div class='main'>
+		<img src='image1.jpeg' id='mainImg'>
+	</div>
+</body>
+</html>
+
